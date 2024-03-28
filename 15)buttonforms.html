@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Forms in HTML</title>
+</head>
+<body>
+    <h1>Creating Button Based Forms</h1>
+    <hr />
+    <form action="response.txt">
+        <fieldset>
+        <legend><b><i>LEARNING FORM FILLING TECHNIQUES</i></b></legend>
+        <table cellspacing="10">
+            <tr>
+                <td><button><a href="#email">Adding E-Mail Address</a></button></td>
+                <td><button><a href="#URL">Adding URL Address</a></button></td>
+                <td><button><a href="#search">Searching any information</a></button></td>
+                <td><button><a href="#radio">Adding Radio Buttons</a></button></td>
+                <td><button><a href="#check">Adding Check Boxes</a></button></td>
+                <td><button><a href="#drop">Adding Drop Down List</a></button></td>
+                <td><button><a href="#multi">Adding Multiple Selecting Lists</a></button></td>
+                <td><button><a href="#date">Adding Date</a></button></td>
+                <td><button><a href="#upload">Uploading Files</a></button></td>
+            </tr>
+        </table>
+
+        <h2 id="email">Adding E-Mail Address</h2>
+        Enter your E-Mail Address 
+        <input type="email" name="EAddress" placeholder="Enter Email">
+
+        <h2 id="URL">Adding URL Address</h2>
+        Enter your favourite URL address here
+        <input type="url" name="UAddress" placeholder="Enter URL">
+
+        <h2 id="search">Searching Information</h2>
+        Search any information here
+        <input type="search" name="GAddress" placeholder="Enter info you want...">        
+
+        <h2 id="radio">Adding Radio Button</h2>
+        Which Region do you like in Pokemon Journeys ?
+        <table>
+            <tr>
+                <td><input type="radio" name="Region" value="Kanto">Kanto</td>
+                <td><input type="radio" name="Region" value="Johto">Johto</td>
+                <td><input type="radio" name="Region" value="Hoenn">Hoenn</td>
+                <td><input type="radio" name="Region" value="Sinnoh">Sinnoh</td>
+                <td><input type="radio" name="Region" value="Unova">Unova</td>
+                <td><input type="radio" name="Region" value="Kalos">Kalos</td>
+                <td><input type="radio" name="Region" value="Alola">Alola</td>
+                <td><input type="radio" name="Region" value="Galar">Galar</td>
+                <td><input type="radio" name="Region" value="None" checked="checked">None</td>
+                
+            </tr>
+        </table>
+        <br />
+        
+        <h2 id="check">Adding Check Boxes</h2>
+        Which Region do you like in Pokemon Journeys ?
+        <table>
+            <tr>
+                <td><input type="checkbox" name="Region" value="Kanto">Kanto</td>
+                <td><input type="checkbox" name="Region" value="Johto">Johto</td>
+                <td><input type="checkbox" name="Region" value="Hoenn">Hoenn</td>
+                <td><input type="checkbox" name="Region" value="Sinnoh">Sinnoh</td>
+                <td><input type="checkbox" name="Region" value="Unova">Unova</td>
+                <td><input type="checkbox" name="Region" value="Kalos">Kalos</td>
+                <td><input type="checkbox" name="Region" value="Alola">Alola</td>
+                <td><input type="checkbox" name="Region" value="Galar">Galar</td>
+                <td><input type="checkbox" name="Region" value="None">None</td>
+            </tr>
+        </table>
+       
+        <h2 id="drop">Adding Drop Down List</h2>
+        Which Region do you like in Pokemon Journeys ?
+        <select name="Reg">
+            <option value="K">Kanto</option>
+            <option value="J">Johto</option>
+            <option value="H">Hoenn</option>
+            <option value="S">Sinnoh</option>
+            <option value="U">Unova</option>
+            <option value="Ka">Kalos</option>
+            <option value="A">Alola</option>
+            <option value="G">Galar</option>
+            <option value="N" selected="selected">None</option>
+        </select>
+        
+        <h2 id="multi">Adding Multiple Selecting List</h2>
+        Which Region do you like in Pokemon Journeys ?
+        (Click Ctrl and then select the multiple choices)
+        <br />
+        <select name="Reg" multiple="multiple">
+            <option value="K">Kanto</option>
+            <option value="J">Johto</option>
+            <option value="H">Hoenn</option>
+            <option value="S">Sinnoh</option>
+            <option value="U">Unova</option>
+            <option value="Ka">Kalos</option>
+            <option value="A">Alola</option>
+            <option value="G">Galar</option>
+            <option value="N" selected="selected">None</option>
+        </select>
+
+        <h2 id="date">Adding Date Input</h2>
+        Enter the date you fill this response
+        <input type="date" name="DateofEntry">
+
+        <br /><br />
+        <h2 id="upload">Uploading Files</h2>
+        Upload your file by clicking the below link
+        <br />
+        <input type="file" name="files">
+        </fieldset>
+
+        <br />
+        <br />
+        
+        <table>
+        <tr>
+            <td>Click the image below to submit your response</td>
+        </tr>
+        <tr>
+            <td><input type="image" src="c:\Users\fursan\Downloads\agtech.jpg"></td>
+        </tr>
+        <tr>
+            <td>Click here to reset your response</td>
+        </tr>
+        <tr>
+            <td><input type="reset" name="reset" value="Reset the choices"></td>
+        </tr>
+        </table>
+        <input type="hidden" name="pg.no" value="Page">
+    </form>
+    <hr />
+</body>
+</html>
