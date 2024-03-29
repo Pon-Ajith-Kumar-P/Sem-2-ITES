@@ -4,5 +4,8 @@ h1{
     background-color: rgb(213, 237, 206);
 }
 strong{
-    background-color: aquamarine;
+    color: rgb(53, 243, 53);
+    background-color: rgba(154, 161, 243, 0.927);
+    font-family: monospace;
+    
 }

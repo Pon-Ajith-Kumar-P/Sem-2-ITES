@@ -1,0 +1,31 @@
+/*Universal Selector*/
+*{
+    color:rgb(84, 168, 242);
+}
+/*Type Selector*/
+p{
+    color:rgb(238, 137, 114);
+    font-size: x-large;
+
+    
+}
+/*Class Selector*/
+.data {
+    background-color: aliceblue;
+    color: blueviolet;
+}
+/*ID Selector*/
+#champ {
+    background-color: greenyellow;
+    padding: 5px;
+}
+/*Child Selector*/
+ol>li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*Descendant Selector*/
+body h1 {
+    background-color: rgb(239, 253, 149);
+    font-style: italic;
+    color: rgb(254, 64, 248);
+}
