@@ -1,0 +1,29 @@
+div{
+    margin: 50px auto 20px auto;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: blue;
+
+    padding: 20px;
+
+    height: 300px;
+    width:350px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: rgba(0, 255, 255,0.2);
+}
+
+#effect{
+    text-align: center;
+    background-color: rgba(0, 255, 255,0.2);
+    padding: 10px;
+    color: blue;
+}
+
+#ch{
+    text-align: center;
+    background-color: rgba(99, 224, 224, 0.5);
+    padding: 10px;
+    color: green;
+    font-weight: bold;
+}
