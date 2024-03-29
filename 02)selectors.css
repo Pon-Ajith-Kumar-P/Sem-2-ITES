@@ -1,6 +1,6 @@
 /*Universal Selector*/
 *{
-    color:rgb(84, 168, 242);
+    color:rgb(23, 50, 73) /*!important*/;
 }
 /*Type Selector*/
 p{
@@ -16,16 +16,25 @@ p{
 }
 /*ID Selector*/
 #champ {
-    background-color: greenyellow;
+    background-color: rgb(242, 248, 126);
     padding: 5px;
 }
 /*Child Selector*/
 ol>li {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-/*Descendant Selector*/
 body h1 {
     background-color: rgb(239, 253, 149);
     font-style: italic;
     color: rgb(254, 64, 248);
+}
+/*div used inside both the list*/
+div{
+    border: 3px solid #efefef;
+    border-color: rgb(221, 245, 88);
+}
+/*CSS used in the definition list*/
+dl{
+    border: 3px solid #efefef;
+    border-color: rgb(73, 86, 231);
 }
