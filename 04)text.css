@@ -1,0 +1,59 @@
+body{
+    background-color: rgba(66, 255, 192, 0.25);
+}
+
+div{
+    border: 5px solid #ef27ec;
+    padding: 20px;
+    background-color: rgba(255, 119, 241, 0.4)
+    
+}
+
+.sub{
+    border: 5px solid #272eef;
+    padding: 20px;
+    background-color: rgba(255, 119, 241, 0.4);
+    font-stretch: expanded;    
+}
+
+h1{
+    font-size: 30pt;  /*For printer friendly texts*/
+    text-align: center;
+    background-color: white;
+}
+
+h2{
+    font-size: 150%;
+    background-color: rgb(255, 238, 150);
+}
+
+h3{
+    font-size: 125%;
+    color: rgb(106, 212, 123);
+}
+
+h4::first-letter{
+    font-size: 300%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4::first-line{
+    font-weight: normal;
+}
+.geo{ font-family: Georgia, 'Times New Roman', Times, serif;}
+.tim{ font-family: Times, Georgia, 'Times New Roman', serif;}
+.tnr{ font-family: 'Times New Roman', Times, Georgia, serif;}
+
+.ari{ font-family: Arial, Helvetica, sans-serif;}
+.ver{ font-family: Verdana, Geneva, Tahoma, sans-serif}
+.ari{ font-family: Helvetica, Arial, sans-serif;}
+
+.cor{ font-family: Courier, 'Courier New', monospace;}
+.con{ font-family: 'Courier New', Courier, monospace;}
+
+.com{ font-family: 'Comic-Sans-MS', 'Monotype-Corsiva' cursive;}
+.com{ font-family: 'Monotype-Corsiva' 'Comic-Sans-MS', cursive;}
+
+.imp{ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+.hae{ font-family: Haettenschweiler, Impact, 'Arial Narrow Bold', sans-serif;}
+
