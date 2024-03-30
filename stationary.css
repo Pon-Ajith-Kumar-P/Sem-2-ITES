@@ -1,0 +1,93 @@
+body{
+    margin:100px 70px 50px 40px;
+    background-image: url(bg_stationary.jpg);
+    background-position: left-top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1{
+    color: #0a22ff;
+    background-color: rgba(0, 251, 255,0.7);
+    border-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6vh;    
+    border-width: 5px ;
+    border-style: ridge;
+   text-align: center;
+    padding: 4vh;
+}
+h2{
+    color: #0a22ff;
+    background-color: rgba(0, 251, 255,0.5);
+    border-color: antiquewhite;
+    border-width: 5px ;
+    border-style: groove;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vh;
+    font-style: oblique;
+    text-align: center;
+    padding: 25px;
+}
+table{
+    width: 100%;
+    height: 100%;
+    border-width: 100%;
+    border-style: ridge;
+    background-color:white;
+}
+#head{
+    font-weight: bolder;
+    font-size: 5vh;
+    background-color: rgba(0, 255, 255, 0.3);
+    text-align: center;
+    text-transform: uppercase;
+}
+.sno{
+    font-weight: bolder;
+    font-size: 5vh;
+    color: cornflowerblue;   
+    text-align: center;
+}
+.main{
+    font-size: 3vw;
+    color: rgb(0, 78, 222);   
+    text-align: center;
+}
+.quo{
+    font-size: 3vw;
+    color: rgb(0, 78, 222);   
+    text-align: center;
+}
+.rate{
+    font-size: 3vw;
+    color: rgb(0, 78, 222);   
+    text-align: left;
+}
+.odd{
+    background-color: aliceblue;
+}
+.even{
+    background-color: antiquewhite;
+}
+h1:hover{
+    color: cornsilk;
+    background-color: hsla(160, 100%, 75%, 0.85);
+}
+h2:hover{
+    background-color: hsla(160, 100%, 75%, 0.85);
+    color: cornsilk;
+}
+.main:hover{
+    color: rgb(51, 0, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.quo:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.rate:hover{
+    font-weight: bold;
+    font-style: italic;
+}
