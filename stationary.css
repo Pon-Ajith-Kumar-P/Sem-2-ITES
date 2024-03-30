@@ -9,6 +9,7 @@ h1{
     color: #0a22ff;
     background-color: rgba(0, 251, 255,0.7);
     border-color: antiquewhite;
+    border-radius: 80px 70px 60px 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 6vh;    
     border-width: 5px ;
@@ -19,6 +20,7 @@ h1{
 h2{
     color: #0a22ff;
     background-color: rgba(0, 251, 255,0.5);
+    border-radius: 50px 70px;
     border-color: antiquewhite;
     border-width: 5px ;
     border-style: groove;

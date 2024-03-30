@@ -1,0 +1,98 @@
+body{
+    margin:50px;
+    background-image: url(bg_gradient.jpg);
+    background-position: left-top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    background-color: rgba(250, 235, 215,0.4);
+    color: rgb(13, 0, 255);
+    border-color: antiquewhite;
+    border-radius:50px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6vh;    
+    border-width: 5px ;
+    border-style: ridge;
+   text-align: center;
+    padding: 4vh;
+}
+fieldset {
+    color: rgb(21, 0, 255);
+    font-size: 30px;
+    border: 10px solid #cce2de;
+    width: auto;
+    border-radius: 40px 50px;
+    padding: 50px;
+    text-align: left;
+}
+
+legend {
+    background-color: rgba(204, 226, 222,0.2);
+    border: 5px solid #cce2de;
+    border-radius: 10px 100px;
+    padding: 10px 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+div{
+    font-size: 30px;
+    color: rgb(21, 0, 255);
+    text-transform: uppercase;
+    text-align: left;
+}
+
+select{
+    color: gray;
+    font-size:30px;
+    border-radius: 20px;
+    border-width: 3px;
+    
+}
+
+input { 
+    font-size: 100%; 
+    color:#808080;
+    width: 100%; 
+    background-color: #f2f2f2; 
+    border: 3px solid #bdbdbd; 
+    border-radius: 15px; 
+    background-repeat: no-repeat; 
+    background-position: 8px 9px; 
+    margin-bottom: 10px;
+} 
+
+tr{
+    padding: 50%;
+}
+
+td{
+    padding: 10px;
+}
+
+span{
+    border: 3px groove aquamarine;
+    color: #000000;
+}
+
+select:focus {
+    background-color: #ffffff; 
+    border: 1px solid #d6f2f4;
+} 
+
+select:hover{
+    background-color: #ffffff; 
+    border: 1px solid #d6f2f4;
+}
+
+input:focus {
+    background-color: #ffffff; 
+    border: 1px solid #d6f2f4;
+} 
+
+input:hover{
+    background-color: #ffffff; 
+    border: 1px solid #d6f2f4;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Input Forms in HTML</title>
+    <link href="forms.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>ANNA UNIVERSITY</h1>
+    <form action="response.html">
+    <fieldset>
+        <legend><b><i>STUDENT INFORMATION</i></b></legend>
+        <table>
+        <tr>
+            <td><div>Name</div></td>
+            <td><input type="text" name="Name" maxlength="50" placeholder="Enter your Name"></td>
+        </tr>
+
+        <tr>
+            <td><div>Roll Number</div></td>
+            <td><input type="number" name="roll" maxlength="10" placeholder="Enter your Roll Number"></td>
+        </tr>
+        
+        <tr>
+            <td><div>Mobile Number</div></td> 
+            <td><input type="text" name="mobile" placeholder="Enter your Mobile Number"></td>
+        </tr>
+        
+        <tr>
+            <td><div>E-Mail Address</div></td> 
+            <td><input type="email" name="EAddress" placeholder="Enter your Email"></td>
+        </tr>
+        
+        <tr>
+            <td><div>Date of Birth</div></td> 
+            <td><input type="date" name="dob"></td>
+        </tr>
+
+        <tr>
+            <td><div>Age</div></td> 
+            <td><input type="number" name="age" placeholder="Enter your Age"></td>
+        </tr>
+        
+        <tr>
+            <td><div>Campus</div></td> 
+            <td>
+                <select name="ceg">
+                    <option value="ceg">COLLEGE OF ENGINEERING GUINDY</option>
+                    <option value="mit">MADRAS INSTITUTE OF TECHNOLOGY</option>
+                    <option value="act">ALAGAPPA COLLEGE OF TECHNOLOGY</option>
+                    <option value="sap">SCHOOL OF PLANNING AND ARCHITECTURE</option>
+                </select>        
+            </td>
+        </tr>
+
+        <tr>
+            <td><div>Department</div></td> 
+            <td>
+                <select name="dept">
+                    <option value="cse">B.E. Computer Science and Engineering</option>
+                    <option value="it">B.Tech Information Technology</option>
+                    <option value="ece">B.E. Electronics and Communication Engineering</option>
+                    <option value="eee">B.E. Electrical and Electronics Engineering</option>
+                    <option value="mech">B.E. Mechanical Engineering</option>
+                    <option value="civil">B.E. Civil Engineering</option>
+                    <option value="ppt">B.E. Printing and Packaging Technology</option>
+                    <option value="ie">B.E. Industrial Engineering</option>
+                    <option value="other">Other</option>
+                </select>        
+            </td>
+        </tr>
+
+        <tr>
+            <td><div>Year of Study</div></td> 
+            <td>
+                <select name="year">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>        
+            </td>
+        </tr>
+        
+        <tr>
+            <td><div>Semester</div></td> 
+            <td>
+                <select name="sem">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>        
+            </td>
+        </tr>
+
+
+
+        <tr>
+        <div id="gender">
+            <td><div>Gender<div></td> 
+            <td>
+                <select name="gender">
+                    <option value="m">Male</option>
+                    <option value="f">Female</option>
+                    <option value="tg">Transgender</option>
+                </select>
+            
+            </td>
+        </div>
+        </tr>
+        
+        <tr>
+            <td><div>Blood Group</div></td> 
+            <td>
+                <select name="bg">
+                    <option value="a+">A+</option>
+                    <option value="a-">A-</option>
+                    <option value="b+">B+</option>
+                    <option value="b-">B-</option>
+                    <option value="ab+">AB+</option>
+                    <option value="ab-">AB-</option>
+                    <option value="o+">O+</option>
+                    <option value="o-">O-</option>
+                </select>        
+            </td>
+        </tr>
+
+    </table>
+    <span>
+    <input type="submit" name="sub" value="Submit your response">
+    <input type="reset" name="reset" value="Reset the choices">       
+    </span>
+    
+    </fieldset>        
+    </form>
+</body>
+</html>
