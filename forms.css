@@ -20,7 +20,7 @@ h1{
 }
 fieldset {
     color: rgb(21, 0, 255);
-    font-size: 30px;
+    font-size: 50px;
     border: 10px solid #cce2de;
     width: auto;
     border-radius: 40px 50px;
@@ -38,15 +38,15 @@ legend {
 }
 
 div{
-    font-size: 30px;
-    color: rgb(21, 0, 255);
+    font-size: 50px;
+    color: whitesmoke;
     text-transform: uppercase;
     text-align: left;
 }
 
 select{
     color: gray;
-    font-size:30px;
+    font-size:50px;
     border-radius: 20px;
     border-width: 3px;
     
