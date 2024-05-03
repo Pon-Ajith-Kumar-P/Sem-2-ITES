@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Classification</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 12px 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #dddfe2;
+        }
+        .input-field {
+            width: 50px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .input-field:focus {
+            border-color: #66afe9;
+            outline: 0;
+            box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+        }
+        button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #results {
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .result-box {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #e9ecef;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .passing {
+            color: #28a745; /* Green color for general pass */
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Marks Classification</h1>
+    <table id="marksTable">
+        <thead>
+            <tr>
+                <th>Students</th>
+                <th>English</th>
+                <th>Mathematics</th>
+                <th>Physics</th>
+                <th>IT Essentials</th>
+                <th>Engg. Drawing</th>
+                <th>Total</th>
+                <th>Average</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <button onclick="classifyMarks()">Classify Marks</button>
+
+    <div id="results">
+        <div class="result-box" id="distinctionCount">Distinctions: 0</div>
+        <div class="result-box" id="firstClassCount">First Class: 0</div>
+        <div class="result-box" id="secondClassCount">Second Class: 0</div>
+        <div class="result-box" id="passCount" class="passing">Pass: 0</div>
+        <div class="result-box" id="failCount">Fail: 0</div>
+    </div>
+
+    <script>
+        function addStudentRows() {
+            const tbody = document.getElementById('marksTable').getElementsByTagName('tbody')[0];
+            for (let i = 1; i <= 10; i++) {
+                let row = tbody.insertRow();
+                let cell = row.insertCell();
+                cell.textContent = 'Student ' + i;
+                for (let j = 1; j <= 5; j++) {
+                    cell = row.insertCell();
+                    let input = document.createElement('input');
+                    input.type = 'number';
+                    input.className = 'input-field';
+                    input.id = 'student' + i + 'mark' + j;
+                    cell.appendChild(input);
+                }
+                row.insertCell().setAttribute('id', 'student' + i + 'total');
+                row.insertCell().setAttribute('id', 'student' + i + 'avg');
+                row.insertCell().setAttribute('id', 'student' + i + 'class');
+            }
+        }
+
+        function classifyMarks() {
+            let distinctions = 0, firstClass = 0, secondClass = 0, pass = 0, fail = 0;
+            for (let i = 1; i <= 10; i++) {
+                let total = 0;
+                for (let j = 1; j <= 5; j++) {
+                    total += parseFloat(document.getElementById(`student${i}mark${j}`).value) || 0;
+                }
+                document.getElementById(`student${i}total`).textContent = total.toFixed(2);
+                let average = total / 5;
+                document.getElementById(`student${i}avg`).textContent = average.toFixed(2);
+
+                let classification = '';
+                if (average >= 81) {
+                    classification = 'Distinction';
+                    distinctions++;
+                } else if (average >= 61) {
+                    classification = 'First Class';
+                    firstClass++;
+                } else if (average >= 41) {
+                    classification = 'Second Class';
+                    secondClass++;
+                } else {
+                    classification = 'Fail';
+                    fail++;
+                }
+
+                if (average > 40) {
+                    pass++;
+                }
+
+                document.getElementById(`student${i}class`).textContent = classification;
+            }
+            document.getElementById('distinctionCount').textContent = 'Distinctions: ' + distinctions;
+            document.getElementById('firstClassCount').textContent = 'First Class: ' + firstClass;
+            document.getElementById('secondClassCount').textContent = 'Second Class: ' + secondClass;
+            document.getElementById('passCount').textContent = 'Pass: ' + pass;
+            document.getElementById('failCount').textContent = 'Fail: ' + fail;
+        }
+
+        window.onload = addStudentRows;
+    </script>
+</body>
+</html>
