@@ -83,6 +83,7 @@
 <h2>Power Calculator</h2>
 <form>
     <input type="text" id="display" readonly>
+    <button type="button" class="operator" onclick="clearDisplay()">Clear</button>
     <br>
     <button type="button" class="digit" onclick="appendValue('1')">1</button>
     <button type="button" class="digit" onclick="appendValue('2')">2</button>
@@ -97,8 +98,10 @@
     <button type="button" class="digit" onclick="appendValue('9')">9</button>
     <br>
     <button type="button" class="operator" onclick="appendValue('^')">^</button>
+    <button type="button" class="digit" onclick="appendValue('0')">0</button>
     <button type="button" class="operator" onclick="calculateResult()">=</button>
-    <button type="button" class="operator" onclick="clearDisplay()">C</button>
+    
+    
 </form>
 <p id="result"></p>
 </body>
