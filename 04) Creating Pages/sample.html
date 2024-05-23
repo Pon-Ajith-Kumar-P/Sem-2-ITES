@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linking Pages</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 40px;
+            color: #333;
+        }
+
+        h1 {
+            color: transparent;
+            font-size: 3em;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, #667eea, #764ba2);
+            background-clip: text;
+            padding: 20px; /* Add padding for spacing */
+            font-weight: bold; /* Increase font weight for emphasis */
+        }
+        
+        a {
+            display: inline-block;
+            margin: 20px;
+            text-decoration: none;
+            transition: transform 0.2s, filter 0.2s;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            transition: transform 0.3s, box-shadow 0.3s, filter 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            filter: grayscale(20%);
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            filter: grayscale(0%);
+        }
+
+        img:active {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .link-container {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .link-container:hover .link-text {
+            color: #555;
+        }
+
+        .link-text {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #777;
+            transition: color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Favorite Websites</h1>
+    <div class="link-container">
+        <a href="https://www.facebook.com/">
+            <img src="fb.png" alt="Facebook">
+            <span class="link-text">Facebook</span>
+        </a>
+    </div>
+    <div class="link-container">
+        <a href="https://www.instagram.com/">
+            <img src="insta.png" alt="Instagram">
+            <span class="link-text">Instagram</span>
+        </a>
+    </div>
+    <div class="link-container">
+        <a href="https://x.com/?lang=en">
+            <img src="twit.png" alt="Twitter">
+            <span class="link-text">Twitter</span>
+        </a>
+    </div>
+    <div class="link-container">
+        <a href="https://www.youtube.com/">
+            <img src="yt.png" alt="YouTube">
+            <span class="link-text">YouTube</span>
+        </a>
+    </div>
+</body>
+</html>
