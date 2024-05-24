@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squares and Cubes</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Squares and Cubes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Square</th>
+                    <th>Cube</th>
+                </tr>
+            </thead>
+            <tbody id="resultTable"></tbody>
+        </table>
+    </div>
+    <script>
+
+            const tableBody = document.getElementById('resultTable');
+            for (let i = 0; i <= 5; i++) {
+                const row = document.createElement('tr');
+                const numberCell = document.createElement('td');
+                const squareCell = document.createElement('td');
+                const cubeCell = document.createElement('td');
+
+                numberCell.textContent = i;
+                squareCell.textContent = i * i;
+                cubeCell.textContent = i * i * i;
+
+                row.appendChild(numberCell);
+                row.appendChild(squareCell);
+                row.appendChild(cubeCell);
+
+                tableBody.appendChild(row);
+            }
+
+
+    </script>
+</body>
+</html>

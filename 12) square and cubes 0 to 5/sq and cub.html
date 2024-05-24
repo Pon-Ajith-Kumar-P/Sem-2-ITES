@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(180deg,blue,green,yellow);
+        }
+        .container{
+            padding: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 70%;
+            background-color: white;
+            box-shadow: 0 20px 20px black;
+        }
+        table,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        table{
+            width: 100%;
+        }
+        th{
+            background-color: aliceblue;
+            font-size: 20px;
+        }
+        td{
+            background-color: bisque;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>SQUARE AND CUBE OF NUMBERS 0 TO 5</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Square</th>
+                <th>Cube</th>
+            </tr>
+        </thead>
+        <tbody id="result"></tbody>
+    </table>
+</div>
+    <script>
+        const tbody = document.getElementById("result");
+        for(let i=0;i<=5;i++)
+        {
+            let row,num,sq,cu;
+            row=document.createElement("tr");
+            num=document.createElement('td');
+            sq=document.createElement("td");
+            cu=document.createElement("td");
+            
+            num.textContent = i;
+            sq.textContent = i*i;
+            cu.textContent = i*i*i;
+
+            row.appendChild(num);
+            row.appendChild(sq);
+            row.appendChild(cu);
+            
+            tbody.appendChild(row);
+
+        }
+    </script>
+</body>
+</html>
