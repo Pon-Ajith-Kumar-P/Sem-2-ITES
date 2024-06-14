@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            text-align: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 45px;
+        }
+        .txt {
+            width: 400px; /* Adjust the width as needed */
+            height: 50px;
+            font-size: 45px;
+            border-radius: 10px;
+            border-style: solid;
+            text-align: center;
+        }
+        input {
+            width: 75px;
+            height: 50px;
+            font-size: 45px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 20px 10px black;
+            border-style: none;
+        }
+        .btn:hover {
+            background-color: yellow;
+            cursor: pointer;
+        }
+        div{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form name="clic">
+        <input class="txt" type="text" name="display"><br>
+        </div>
+        <input class="btn" type="button" value="0" onclick="clic.display.value += '0'">
+        <input class="btn" type="button" value="1" onclick="clic.display.value += '1'">
+        <input class="btn" type="button" value="2" onclick="clic.display.value += '2'">
+        <input class="btn" type="button" value="+" onclick="clic.display.value += '+'"><br>
+        <input class="btn" type="button" value="3" onclick="clic.display.value += '3'">
+        <input class="btn" type="button" value="4" onclick="clic.display.value += '4'">
+        <input class="btn" type="button" value="5" onclick="clic.display.value += '5'">
+        <input class="btn" type="button" value="-" onclick="clic.display.value += '-'"><br>
+        <input class="btn" type="button" value="6" onclick="clic.display.value += '6'">
+        <input class="btn" type="button" value="7" onclick="clic.display.value += '7'">
+        <input class="btn" type="button" value="8" onclick="clic.display.value += '8'">
+        <input class="btn" type="button" value="*" onclick="clic.display.value += '*'"><br>
+        <input class="btn" type="button" value="9" onclick="clic.display.value += '9'">
+        <input id="clear" class="btn" type="button" value="C" onclick="clic.display.value = ''">
+        <input class="btn" type="button" value="=" onclick="clic.display.value = eval(clic.display.value)">
+        <input class="btn" type="button" value="/" onclick="clic.display.value += '/'">
+    </form>
+</body>
+</html>

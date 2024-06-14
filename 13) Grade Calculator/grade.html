@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Class Average Generator</h1>
+    <form><input type="number" placeholder="Enter Grade (-1) to stop" id="gradeInput"></form>
+    <button onclick="evalGrade()">Calculate Grade</button>
+    <p id="result"></p>
+    <script>
+        let count = 0;
+        let total = 0;
+        function evalGrade()
+        {
+            const gradeInput = document.getElementById("gradeInput");
+            const grade = parseInt(gradeInput.value);
+            if(grade===-1)
+            {
+                const result = (count===0) ? "No grades were entered" : "Average = " + total/count ;
+                document.getElementById("result").textContent=result;
+                document.getElementById("gradeInput").disabled=true;
+                document.querySelector("button").disabled=true;
+                }
+            else if(grade>=0 && !isNaN(grade))
+            {
+                count = count + 1;
+                total += grade;
+                gradeInput.value='';
+            }
+            else
+            {
+                alert("Enter valid grade or -1 to stop");
+            }
+        }
+        gradeInput.focus();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Table Question</title>
+    <style>
+        caption{
+            caption-side: top;
+        }
+        td{
+            text-align: center;
+        }
+        table,td{
+            border: solid 3px black;
+            border-collapse: collapse;
+        }
+        .o{
+            color: white;
+            background-color: orange;
+        }
+        .b{
+            color: white;
+            background-color: blue;
+        }
+        .g{
+            color: white;
+            background-color: rgb(0, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Time Table</caption>
+        <tr>
+           <td rowspan="2">Day</td>
+           <td rowspan="2" style="vertical-align:top;">Timing</td>
+           <td colspan="3" style="text-align:center;">Venue</td>
+        </tr>
+        <tr>
+            <td class="o">Conference Hall</td>
+            <td class="b">AUKBC Hall</td>
+            <td class="g">Rajam Hall</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Mon</td>
+            <td>8-9 AM</td>
+            <td class="o">English</td>
+            <td class="b">ITE</td>
+            <td class="g">Math</td>
+        </tr>
+        <tr>
+            <td>10-11 AM</td>
+            <td class="o">Physics</td>
+            <td colspan="2" class="b">ED</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Wed</td>
+            <td>8-9 AM</td>
+            <td class="o">ITE</td>
+            <td class="b">Chemsitry</td>
+            <td class="g">Physics</td>
+        </tr>
+        <tr>
+            <td>10-11 AM</td>
+            <td colspan="2" class="o">Tamil</td>
+            <td class="g">Math</td>
+        </tr>
+            <td>2-3 PM</td>
+            <td class="o">Math</td>
+            <td class="b">English</td>
+            <td class="g">ITE</td>
+        <tr>
+            <td>Wed</td>
+            <td>9-10 AM</td>
+            <td colspan="3" class="o">Heritage and Culture</td>
+        </tr>
+    </table>
+</body>
+</html>

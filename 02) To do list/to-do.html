@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo App</title>
+    <style>
+        body {
+            margin: 20px auto;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        input[type="text"] {
+            height: 30px;
+            width: 300px;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        button {
+            height: 35px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 0 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        li {
+            background-color: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Todo App</h1>
+        <div class="box">
+            <input type="text" name="task" id="todo-task" placeholder="Enter the task">
+            <button onclick="addTodo()">ADD</button>
+            <ul id="result"></ul>
+        </div>
+    </div>
+    <script>
+        function addTodo() {
+            var todo = document.getElementById("todo-task");
+            var todoLi = todo.value.trim();
+
+            if (todoLi !== "") 
+            {
+                var li = document.createElement("li");
+                li.textContent = todoLi;
+
+                var deleteButton = document.createElement("button");
+                deleteButton.textContent = "Delete";
+                deleteButton.onclick = 
+                function() {
+                    li.remove();
+                }
+                
+                li.appendChild(deleteButton);
+                document.getElementById("result").appendChild(li);
+                todo.value = "";
+
+                
+            }
+        }
+    </script>
+</body>
+</html>
